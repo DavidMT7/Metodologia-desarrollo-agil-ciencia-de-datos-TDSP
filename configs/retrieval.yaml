@@ -46,4 +46,7 @@ paths:
   summary_json: docs/data/evaluation/fase3_summary.json
   scenarios_json: docs/data/evaluation/fase3_scenarios.json
   best_model: artifacts/fase3/biencoder_best
+  best_model_fase4: artifacts/fase4/biencoder_best
   figures: docs/data/figures
+  fase4_summary: docs/data/evaluation/fase4_summary.json
+  fase4_grid: artifacts/fase4/grid_rows.json

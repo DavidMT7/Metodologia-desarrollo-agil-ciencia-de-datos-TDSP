@@ -301,32 +301,27 @@ def run(root: Path | None = None) -> dict:
         encoding="utf-8",
     )
 
-    # Marcar checklist entrada congelada
-    entrada = root / "Fase_IV" / "01_entrada_congelada.md"
-    text = entrada.read_text(encoding="utf-8")
-    for old in [
-        "- [ ] `responder(pregunta)`",
-        "- [ ] Salida S1–S5",
-        "- [ ] Guía de una página",
-        "- [ ] Acta de aceptación",
-        "- [ ] `docs/deployment/deploymentdoc.md` ejecutado",
-        "- [ ] `docs/acceptance/exit_report.md` al final",
-    ]:
-        # fuzzy replace incomplete lines
-        pass
-    text = text.replace("- [ ] `responder(pregunta)` carga el bi-encoder de dos épocas, el índice hardened, BM25 publicado y RRF. Compuerta 0,40. No llama al re-ranker. No imprime épocas.",
-                        "- [x] `responder(pregunta)` carga el bi-encoder de dos épocas, el índice hardened, BM25 publicado y RRF. Compuerta 0,40. No llama al re-ranker. No imprime épocas.")
-    text = text.replace("- [ ] Salida S1–S5 en `docs/acceptance/`.",
-                        "- [x] Salida S1–S5 en `docs/acceptance/`.")
-    text = text.replace("- [ ] Guía de una página.",
-                        "- [x] Guía de una página (`docs/acceptance/guia_analista.md`).")
-    text = text.replace("- [ ] Acta de aceptación + límite SIEM.",
-                        "- [x] Acta de aceptación + límite SIEM.")
-    text = text.replace("- [ ] `docs/deployment/deploymentdoc.md` ejecutado.",
-                        "- [x] `docs/deployment/deploymentdoc.md` ejecutado.")
-    text = text.replace("- [ ] `docs/acceptance/exit_report.md` al final.",
-                        "- [x] `docs/acceptance/exit_report.md` al final.")
-    entrada.write_text(text, encoding="utf-8")
+    # Marcar checklist de entrada si existe (raíz anidada Fase_IV o carpeta Fase_IV del padre)
+    for entrada in (root / "01_entrada_congelada.md", root / "Fase_IV" / "01_entrada_congelada.md"):
+        if not entrada.is_file():
+            continue
+        text = entrada.read_text(encoding="utf-8")
+        text = text.replace("- [ ] `responder(pregunta)` carga el bi-encoder de dos épocas, el índice hardened, BM25 publicado y RRF. Compuerta 0,40. No llama al re-ranker. No imprime épocas.",
+                            "- [x] `responder(pregunta)` carga el bi-encoder de dos épocas, el índice hardened, BM25 publicado y RRF. Compuerta 0,40. No llama al re-ranker. No imprime épocas.")
+        text = text.replace("- [ ] Salida S1–S5 en `docs/acceptance/`.",
+                            "- [x] Salida S1–S5 en `docs/acceptance/`.")
+        text = text.replace("- [ ] Guía de una página.",
+                            "- [x] Guía de una página (`docs/acceptance/guia_analista.md`).")
+        text = text.replace("- [ ] Acta de aceptación + límite SIEM.",
+                            "- [x] Acta de aceptación + límite SIEM.")
+        text = text.replace("- [ ] `docs/deployment/deploymentdoc.md` ejecutado.",
+                            "- [x] `docs/deployment/deploymentdoc.md` ejecutado.")
+        text = text.replace("- [ ] `docs/acceptance/exit_report.md` al final.",
+                            "- [x] `docs/acceptance/exit_report.md` al final.")
+        text = text.replace("- [ ] `responder` + S1–S5 con checkpoint F4",
+                            "- [x] `responder` + S1–S5 con checkpoint F4")
+        entrada.write_text(text, encoding="utf-8")
+        break
 
     print(f"media checklist={mean_score:.2f}", flush=True)
     return payload

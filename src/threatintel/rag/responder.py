@@ -79,7 +79,18 @@ def load_responder(root: Path | None = None, *, force: bool = False) -> Responde
     if corpus.loc[corpus["doc_type"] == "mitre", "text"].str.contains("Strategy:", regex=False).mean() < 0.5:
         raise RuntimeError("Índice MITRE sin detection endurecido.")
 
-    model_path = root / cfg["paths"]["best_model"]
+    fase4 = root / cfg["paths"].get("best_model_fase4", "artifacts/fase4/biencoder_best")
+    fase3 = root / cfg["paths"]["best_model"]
+    model_path = fase4 if fase4.exists() else fase3
+    threshold = DEPLOY_THRESHOLD
+    summary_path = root / cfg["paths"].get("fase4_summary", "docs/data/evaluation/fase4_summary.json")
+    if summary_path.is_file():
+        import json
+
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        # Conservador: no bajar del floor heredado; sí subir si la calibración lo pide
+        cal = float((summary.get("threshold") or {}).get("threshold") or DEPLOY_THRESHOLD)
+        threshold = max(float(cfg["retrieval"].get("inherited_abstain_floor", 0.25)), min(cal, DEPLOY_THRESHOLD))
     print(f"responder: carga {model_path} en GPU si hay CUDA…", flush=True)
     model = load_encoder(str(model_path), int(cfg["max_seq_length"]))
     batch = int(cfg["encode_batch_size"])
@@ -95,9 +106,9 @@ def load_responder(root: Path | None = None, *, force: bool = False) -> Responde
         model=model,
         dense_index=dense_index,
         bm25=bm25,
-        threshold=DEPLOY_THRESHOLD,
+        threshold=threshold,
     )
-    print("responder: listo (RRF k=60, sin re-ranker, umbral 0,40)", flush=True)
+    print(f"responder: listo (RRF k=60, sin re-ranker, umbral {threshold})", flush=True)
     return _SERVICE
 
 

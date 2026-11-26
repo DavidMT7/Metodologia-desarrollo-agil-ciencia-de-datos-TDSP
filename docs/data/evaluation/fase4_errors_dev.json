@@ -2,68 +2,83 @@
   "errors": [
     {
       "id": "D-CVE-01",
-      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16,",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16, Acrobat and Acrobat",
       "relevant": [
         "CVE-2016-1082"
       ],
       "rank": 17,
-      "top3": [
+      "top5": [
         "CVE-2016-1127",
         "CVE-2016-4097",
-        "CVE-2016-4096"
-      ]
+        "CVE-2016-4096",
+        "CVE-2016-1116",
+        "CVE-2016-4101"
+      ],
+      "top_score": 0.8466748595237732
     },
     {
       "id": "D-CVE-03",
-      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.18,",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.18, Acrobat and Acrobat",
       "relevant": [
         "CVE-2016-4095"
       ],
       "rank": 29,
-      "top3": [
+      "top5": [
         "CVE-2016-6970",
         "CVE-2016-7000",
-        "CVE-2016-6996"
-      ]
+        "CVE-2016-6996",
+        "CVE-2016-6960",
+        "CVE-2016-6950"
+      ],
+      "top_score": 0.7975362539291382
     },
     {
       "id": "D-CVE-07",
-      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16,",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16, Acrobat and Acrobat",
       "relevant": [
         "CVE-2016-1073"
       ],
       "rank": 43,
-      "top3": [
+      "top5": [
         "CVE-2016-1127",
         "CVE-2016-4097",
-        "CVE-2016-4096"
-      ]
+        "CVE-2016-4096",
+        "CVE-2016-1116",
+        "CVE-2016-4101"
+      ],
+      "top_score": 0.8466748595237732
     },
     {
       "id": "D-CVE-11",
-      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE no indicado: «Use-after-free vulnerability in ",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE no indicado: «Use-after-free vulnerability in Adobe Reader and Acr",
       "relevant": [
         "CVE-2016-1056"
       ],
       "rank": 18,
-      "top3": [
+      "top5": [
         "CVE-2016-4107",
         "CVE-2016-4102",
-        "CVE-2016-1075"
-      ]
+        "CVE-2016-1075",
+        "CVE-2016-1067",
+        "CVE-2016-1060"
+      ],
+      "top_score": 0.8046172857284546
     },
     {
       "id": "D-CVE-33",
-      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en rockwellautomation/micrologix_1400_b_firmware, asociada a CWE no indicado: «",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en rockwellautomation/micrologix_1400_b_firmware, asociada a CWE no indicado: «An exploitable acces",
       "relevant": [
         "CVE-2017-14469"
       ],
       "rank": 12,
-      "top3": [
+      "top5": [
         "CVE-2017-14463",
         "CVE-2017-14466",
-        "CVE-2017-14473"
-      ]
+        "CVE-2017-14473",
+        "CVE-2017-14464",
+        "CVE-2017-14470"
+      ],
+      "top_score": 0.7652957439422607
     }
   ]
 }

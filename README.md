@@ -1,31 +1,34 @@
-# Entrega — Fase III (Modelado RAG / bi-encoder)
+# Entrega — Fase IV (Fine-tuning, validación y despliegue)
 
-**Metodología:** TDSP · modelado + evaluación
+**Metodología:** TDSP · entrenamiento + aceptación
 
-## Notebook de la fase
+## Notebook de la fase (único)
 
-`scripts/modeling/Proyecto_Fase3_RAG_Asistente.ipynb`
+`scripts/modeling/Proyecto_Fase4_FineTuning_Validacion.ipynb`
 
-## Estructura
+## Índice de entrega
 
-```text
-artifacts/fase3/biencoder_best/   metadatos del checkpoint (pesos fuera de git)
-configs/
-data/processed/
-docs/modeling/                    model_report, hiperparámetros, zoo
-docs/data/evaluation/             métricas y gold
-scripts/modeling/
-src/threatintel/rag/
-```
+| Pieza | Ruta |
+|-------|------|
+| Entrega | `00_ENTREGA.md` |
+| Evidencia rúbrica | `03_evidencia_rubrica_fase4.md` |
+| Contraste rúbrica | `04_contraste_rubrica.md` |
+| Fine-tuning | `docs/modeling/fine_tuning/` |
+| Training CLI | `scripts/training/` |
+| Aceptación | `docs/acceptance/` |
+| Despliegue | `docs/deployment/` |
+| Checkpoint | `artifacts/fase4/biencoder_best/CHECKPOINT.md` |
 
 ## Objetivo
 
-Entrenar y seleccionar un bi-encoder de retrieval para el asistente CTI, con grilla de hiperparámetros, validación en desarrollo y gold hold-out que **solo reporta**.
+Continuar el fine-tuning del retrieval, validar (incluyendo consultas en español sin extracto), calibrar abstención y demostrar el asistente (S1–S5).
 
-## Cómo revisar
+## Cómo ejecutar la demo
 
-1. Notebook Fase III  
-2. `docs/modeling/`  
-3. `docs/data/evaluation/`  
+```powershell
+$env:PYTHONPATH = "src"
+python scripts/training/main.py list
+python scripts/evaluation/main.py
+```
 
-Los pesos grandes no están en el repositorio; ver `artifacts/fase3/biencoder_best/CHECKPOINT.md`.
+Requiere haber entrenado o colocado los pesos locales según `CHECKPOINT.md`.

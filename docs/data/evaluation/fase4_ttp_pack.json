@@ -1,0 +1,371 @@
+{
+  "bootstrap": {
+    "pasted": {
+      "F3_MiniLM": {
+        "n": 30,
+        "mean": 0.6882110694134946,
+        "low": 0.533109408854673,
+        "high": 0.8287696950556199,
+        "n_boot": 2000
+      },
+      "DistilUSE_confirm": {
+        "n": 30,
+        "mean": 0.7651816996958277,
+        "low": 0.6169246190858058,
+        "high": 0.8919607843137255,
+        "n_boot": 2000
+      },
+      "Strip_deploy": {
+        "n": 30,
+        "mean": 0.7441748550233124,
+        "low": 0.5950885900749784,
+        "high": 0.8796247563352826,
+        "n_boot": 2000
+      }
+    },
+    "stripped": {
+      "F3_MiniLM": {
+        "n": 30,
+        "mean": 0.1976907982493539,
+        "low": 0.0865761326447372,
+        "high": 0.3141917727969012,
+        "n_boot": 2000
+      },
+      "DistilUSE_confirm": {
+        "n": 30,
+        "mean": 0.20831217491521362,
+        "low": 0.09614393401325866,
+        "high": 0.3303561404782662,
+        "n_boot": 2000
+      },
+      "Strip_deploy": {
+        "n": 30,
+        "mean": 0.32490628323405824,
+        "low": 0.1791707907684201,
+        "high": 0.46917512710163833,
+        "n_boot": 2000
+      }
+    },
+    "rrf60": {
+      "F3_MiniLM": {
+        "n": 30,
+        "mean": 0.7293806712798768,
+        "low": 0.5880098831985624,
+        "high": 0.8681035923141186,
+        "n_boot": 2000
+      },
+      "DistilUSE_confirm": {
+        "n": 30,
+        "mean": 0.794836293974225,
+        "low": 0.6567311041448972,
+        "high": 0.917816091954023,
+        "n_boot": 2000
+      },
+      "Strip_deploy": {
+        "n": 30,
+        "mean": 0.776068933481977,
+        "low": 0.6380641025641026,
+        "high": 0.9062826086956522,
+        "n_boot": 2000
+      }
+    },
+    "gold_dense": {
+      "F3_MiniLM": {
+        "n": 32,
+        "mean": 0.8898809523809523,
+        "low": 0.8050595238095237,
+        "high": 0.96875,
+        "n_boot": 2000
+      },
+      "DistilUSE_confirm": {
+        "n": 32,
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_boot": 2000
+      },
+      "Strip_deploy": {
+        "n": 32,
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_boot": 2000
+      }
+    }
+  },
+  "deltas": {
+    "DistilUSE_vs_F3_pasted": {
+      "n": 30,
+      "mean": 0.07697063028233299,
+      "low": -0.027243167665480315,
+      "high": 0.18638689939417052,
+      "n_boot": 2000,
+      "excludes_zero": false
+    },
+    "Strip_vs_F3_pasted": {
+      "n": 30,
+      "mean": 0.05596378560981763,
+      "low": -0.05476029354512327,
+      "high": 0.17277349181193868,
+      "n_boot": 2000,
+      "excludes_zero": false
+    },
+    "Strip_vs_DistilUSE_pasted": {
+      "n": 30,
+      "mean": -0.021006844672515346,
+      "low": -0.05728502778038383,
+      "high": 0.0010077010293008577,
+      "n_boot": 2000,
+      "excludes_zero": false
+    },
+    "Strip_vs_DistilUSE_stripped": {
+      "n": 30,
+      "mean": 0.11659410831884466,
+      "low": 0.029592220437134064,
+      "high": 0.2251735367685144,
+      "n_boot": 2000,
+      "excludes_zero": true
+    },
+    "DistilUSE_vs_F3_rrf": {
+      "n": 30,
+      "mean": 0.06545562269434817,
+      "low": 0.004344511583237056,
+      "high": 0.13782473861421232,
+      "n_boot": 2000,
+      "excludes_zero": true
+    }
+  },
+  "family": {
+    "F3_MiniLM": {
+      "dev_cve": {
+        "mrr": 0.5823166041202421,
+        "n": 20
+      },
+      "dev_mitre": {
+        "mrr": 0.9,
+        "n": 10
+      }
+    },
+    "DistilUSE_confirm": {
+      "dev_cve": {
+        "mrr": 0.6477725495437416,
+        "n": 20
+      },
+      "dev_mitre": {
+        "mrr": 1.0,
+        "n": 10
+      }
+    },
+    "Strip_deploy": {
+      "dev_cve": {
+        "mrr": 0.6412622825349685,
+        "n": 20
+      },
+      "dev_mitre": {
+        "mrr": 0.95,
+        "n": 10
+      }
+    }
+  },
+  "recall": {
+    "F3_MiniLM": {
+      "k": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "recall": [
+        0.6333333333333333,
+        0.7,
+        0.7,
+        0.7,
+        0.7333333333333333,
+        0.7333333333333333,
+        0.7666666666666667,
+        0.7666666666666667,
+        0.7666666666666667,
+        0.7666666666666667
+      ],
+      "n": 30
+    },
+    "DistilUSE_confirm": {
+      "k": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "recall": [
+        0.7333333333333333,
+        0.7333333333333333,
+        0.7333333333333333,
+        0.8,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "n": 30
+    },
+    "Strip_deploy": {
+      "k": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "recall": [
+        0.7,
+        0.7333333333333333,
+        0.7333333333333333,
+        0.7333333333333333,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8666666666666667,
+        0.8666666666666667
+      ],
+      "n": 30
+    }
+  },
+  "seed_stability": [
+    {
+      "seed": 7,
+      "tag": "seed_strip_7",
+      "pasted": 0.7521556058320764,
+      "stripped": 0.3382804961933801,
+      "loss": 0.38479640483856203
+    },
+    {
+      "seed": 13,
+      "tag": "seed_strip_13",
+      "pasted": 0.7263603988603989,
+      "stripped": 0.3218121351750244,
+      "loss": 0.38051490783691405
+    },
+    {
+      "seed": 21,
+      "tag": "seed_strip_21",
+      "pasted": 0.7515107115107116,
+      "stripped": 0.3512882788766266,
+      "loss": 0.35505094528198244
+    }
+  ],
+  "seed_pasted_std": 0.01201085998311474,
+  "seed_stripped_std": 0.012061197528912342,
+  "threshold_best": {
+    "threshold": 0.05,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fp": 0,
+    "fn": 0
+  },
+  "n_errors_r5": 6,
+  "errors_sample": [
+    {
+      "id": "D-CVE-01",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16, Acrobat and Acrobat",
+      "relevant": [
+        "CVE-2016-1082"
+      ],
+      "top3": [
+        "CVE-2016-1127",
+        "CVE-2016-1123",
+        "CVE-2016-4097"
+      ]
+    },
+    {
+      "id": "D-CVE-03",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.18, Acrobat and Acrobat",
+      "relevant": [
+        "CVE-2016-4095"
+      ],
+      "top3": [
+        "CVE-2016-6960",
+        "CVE-2016-6966",
+        "CVE-2016-7003"
+      ]
+    },
+    {
+      "id": "D-CVE-07",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16, Acrobat and Acrobat",
+      "relevant": [
+        "CVE-2016-1073"
+      ],
+      "top3": [
+        "CVE-2016-1127",
+        "CVE-2016-1123",
+        "CVE-2016-4097"
+      ]
+    },
+    {
+      "id": "D-CVE-11",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE no indicado: «Use-after-free vulnerability in Adobe Reader and Acr",
+      "relevant": [
+        "CVE-2016-1056"
+      ],
+      "top3": [
+        "CVE-2016-4107",
+        "CVE-2016-4102",
+        "CVE-2016-1067"
+      ]
+    },
+    {
+      "id": "D-CVE-15",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.17, Acrobat and Acrobat",
+      "relevant": [
+        "CVE-2016-4191"
+      ],
+      "top3": [
+        "CVE-2016-1129",
+        "CVE-2016-4119",
+        "CVE-2016-4099"
+      ]
+    },
+    {
+      "id": "D-CVE-33",
+      "family": "dev_cve",
+      "q": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en rockwellautomation/micrologix_1400_b_firmware, asociada a CWE no indicado: «An exploitable acces",
+      "relevant": [
+        "CVE-2017-14469"
+      ],
+      "top3": [
+        "CVE-2017-14463",
+        "CVE-2017-14473",
+        "CVE-2017-14464"
+      ]
+    }
+  ],
+  "decision": "TTP: campeón de SELECCIÓN pasted = DistilUSE confirm (MRR=0.765, IC95% [0.617, 0.892]). Campeón OPERATIVO ES = Strip lr1e-5 (stripped 0.325 vs DistilUSE 0.208; Δ pareado excluye 0=True). Deploy vigente = Strip (regla multi-objetivo declarada). Seeds strip pasted σ=0.012. Gold no eligió.",
+  "selection_champion": "DistilUSE_confirm",
+  "operational_champion": "Strip_deploy",
+  "deploy": "Strip_deploy"
+}

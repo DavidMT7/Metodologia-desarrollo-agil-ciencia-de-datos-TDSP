@@ -1,0 +1,26 @@
+{
+  "F3_MiniLM": {
+    "dense_dev_mrr": 0.6882110694134946,
+    "dense_dev_r5": 0.7333333333333333,
+    "stripped_mrr": 0.1976907982493539,
+    "rrf60_dev_mrr": 0.7293806712798768,
+    "rrf40_dev_mrr": 0.7349295199273169,
+    "rrf100_dev_mrr": 0.7295001155639838,
+    "gold_dense_mrr": 0.8898809523809523,
+    "gold_dense_r5": 0.96875,
+    "gold_rrf_mrr": 0.953125,
+    "gold_rrf_r5": 1.0
+  },
+  "F4_deploy": {
+    "dense_dev_mrr": 0.7441748550233124,
+    "dense_dev_r5": 0.8,
+    "stripped_mrr": 0.32490628323405824,
+    "rrf60_dev_mrr": 0.776068933481977,
+    "rrf40_dev_mrr": 0.7759081498211932,
+    "rrf100_dev_mrr": 0.7764393038523473,
+    "gold_dense_mrr": 1.0,
+    "gold_dense_r5": 1.0,
+    "gold_rrf_mrr": 0.9635416666666667,
+    "gold_rrf_r5": 1.0
+  }
+}

@@ -1,0 +1,49 @@
+seed: 42
+max_seq_length: 256
+batch_size: 32
+warmup_ratio: 0.1
+max_train_pairs: 4000
+max_chars: 1800
+encode_batch_size: 64
+
+models:
+  baseline_minilm: sentence-transformers/all-MiniLM-L6-v2
+  biencoder: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  reranker: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
+
+grid:
+  learning_rates: [2.0e-5, 0.0001]
+  epochs: [1, 2]
+  loss: MultipleNegativesRankingLoss
+  loss_scale: 20.0
+
+retrieval:
+  dense_top_k: 100
+  bm25_top_k: 100
+  rrf_k: 60
+  rrf_top_n: 100
+  rerank_candidates: 30
+  answer_top_k: 3
+  inherited_abstain_floor: 0.25
+  kev_boost: 0.02
+
+splits:
+  n_dev_cve: 40
+  n_dev_mitre: 20
+  n_dev_unknown: 15
+  n_dev_nonsense: 10
+
+paths:
+  cve_clean: data/processed/cve_data_clean.parquet
+  mitre_clean: data/processed/mitre_attack_clean.parquet
+  cve_parquet: data/processed/cve_data_hardened.parquet
+  mitre_parquet: data/processed/mitre_attack_hardened.parquet
+  gold: docs/data/evaluation/gold_set_es.json
+  gold_f3: docs/data/evaluation/gold_set_es_f3.json
+  chunks: data/processed/mitre_chunks_f3.parquet
+  corpus: data/processed/cti_corpus_f3.parquet
+  experiments_csv: docs/data/evaluation/retrieval_experiments.csv
+  summary_json: docs/data/evaluation/fase3_summary.json
+  scenarios_json: docs/data/evaluation/fase3_scenarios.json
+  best_model: artifacts/fase3/biencoder_best
+  figures: docs/data/figures

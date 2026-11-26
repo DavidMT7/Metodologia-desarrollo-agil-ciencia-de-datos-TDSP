@@ -1,0 +1,649 @@
+{
+  "seed": 42,
+  "biencoder": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "batch_size": 32,
+  "max_seq_length": 256,
+  "lineage": {
+    "cve_clean_shape": [
+      5000,
+      30
+    ],
+    "cve_hard_shape": [
+      5000,
+      38
+    ],
+    "mitre_clean_shape": [
+      697,
+      14
+    ],
+    "mitre_hard_shape": [
+      697,
+      22
+    ],
+    "detection_null_clean": 1.0,
+    "detection_null_hardened": 0.0,
+    "unknown_tactic": 0.3954,
+    "unknown_enriched": 0.1648,
+    "index_source": "hardened"
+  },
+  "fase2_reproduction": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_corpus": 5697,
+    "n_queries_eval": 32,
+    "mrr": 0.18786499802883416,
+    "recall_at_k": {
+      "1": 0.15625,
+      "3": 0.1875,
+      "5": 0.25,
+      "10": 0.28125
+    },
+    "seed": 42
+  },
+  "fase2_archived": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_corpus": 5697,
+    "n_queries_eval": 32,
+    "mrr": 0.18786499802883416,
+    "recall_at_k": {
+      "1": 0.15625,
+      "3": 0.1875,
+      "5": 0.25,
+      "10": 0.28125
+    },
+    "seed": 42
+  },
+  "selected_checkpoint": {
+    "tag": "lr1e-04_ep2",
+    "lr": 0.0001,
+    "epochs": 2,
+    "train_loss_last": 0.010342490673065186,
+    "dev_mrr": 0.7998198204210331,
+    "dev_r5": 0.85,
+    "dev_mrr_without_id": 0.6882110694134946,
+    "dev_r5_without_id": 0.7333333333333333,
+    "dev_mrr_with_id": 0.9114285714285714,
+    "n_dev": 60,
+    "n_dev_without_id": 30
+  },
+  "deployed_encoder": {
+    "name": "biencoder_ft",
+    "reason": "el checkpoint lr1e-04_ep2 superó al multilingüe congelado en MRR de dev sin identificador"
+  },
+  "threshold": {
+    "threshold": 0.4,
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 25,
+    "fp": 0,
+    "fn": 0,
+    "tn": 60
+  },
+  "gold_table": {
+    "minilm": {
+      "all": {
+        "n": 32,
+        "mrr": 0.23780757023436755,
+        "recall_at_k": {
+          "1": 0.1875,
+          "3": 0.28125,
+          "5": 0.28125,
+          "10": 0.28125
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.23780757023436755,
+        "recall_at_k": {
+          "1": 0.1875,
+          "3": 0.28125,
+          "5": 0.28125,
+          "10": 0.28125
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "bm25": {
+      "all": {
+        "n": 32,
+        "mrr": 0.3955673286404702,
+        "recall_at_k": {
+          "1": 0.3125,
+          "3": 0.3125,
+          "5": 0.5,
+          "10": 0.625
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.3955673286404702,
+        "recall_at_k": {
+          "1": 0.3125,
+          "3": 0.3125,
+          "5": 0.5,
+          "10": 0.625
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "multi_frozen": {
+      "all": {
+        "n": 32,
+        "mrr": 0.24123614102249757,
+        "recall_at_k": {
+          "1": 0.21875,
+          "3": 0.25,
+          "5": 0.28125,
+          "10": 0.3125
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.24123614102249757,
+        "recall_at_k": {
+          "1": 0.21875,
+          "3": 0.25,
+          "5": 0.28125,
+          "10": 0.3125
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "biencoder_ft": {
+      "all": {
+        "n": 32,
+        "mrr": 0.8898809523809523,
+        "recall_at_k": {
+          "1": 0.8125,
+          "3": 0.96875,
+          "5": 0.96875,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.8898809523809523,
+        "recall_at_k": {
+          "1": 0.8125,
+          "3": 0.96875,
+          "5": 0.96875,
+          "10": 1.0
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "hybrid_rrf": {
+      "all": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "all": {
+        "n": 32,
+        "mrr": 0.9609375,
+        "recall_at_k": {
+          "1": 0.9375,
+          "3": 0.96875,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.9609375,
+        "recall_at_k": {
+          "1": 0.9375,
+          "3": 0.96875,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    },
+    "hybrid_kev_boost": {
+      "all": {
+        "n": 32,
+        "mrr": 0.8274305555555557,
+        "recall_at_k": {
+          "1": 0.75,
+          "3": 0.9375,
+          "5": 0.96875,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 32,
+        "mrr": 0.8274305555555557,
+        "recall_at_k": {
+          "1": 0.75,
+          "3": 0.9375,
+          "5": 0.96875,
+          "10": 1.0
+        }
+      },
+      "without_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      }
+    }
+  },
+  "paraphrase_table": {
+    "minilm": {
+      "all": {
+        "n": 32,
+        "mrr": 0.9120342548076923,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 0.90625,
+          "5": 0.90625,
+          "10": 0.90625
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.9120342548076923,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 0.90625,
+          "5": 0.90625,
+          "10": 0.90625
+        }
+      }
+    },
+    "bm25": {
+      "all": {
+        "n": 32,
+        "mrr": 0.94375,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 0.96875,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.94375,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 0.96875,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    },
+    "multi_frozen": {
+      "all": {
+        "n": 32,
+        "mrr": 0.8294823232323232,
+        "recall_at_k": {
+          "1": 0.75,
+          "3": 0.875,
+          "5": 0.96875,
+          "10": 0.96875
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.8294823232323232,
+        "recall_at_k": {
+          "1": 0.75,
+          "3": 0.875,
+          "5": 0.96875,
+          "10": 0.96875
+        }
+      }
+    },
+    "biencoder_ft": {
+      "all": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    },
+    "hybrid_rrf": {
+      "all": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.953125,
+        "recall_at_k": {
+          "1": 0.90625,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "all": {
+        "n": 32,
+        "mrr": 0.7342635918003565,
+        "recall_at_k": {
+          "1": 0.625,
+          "3": 0.8125,
+          "5": 0.8125,
+          "10": 0.875
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.7342635918003565,
+        "recall_at_k": {
+          "1": 0.625,
+          "3": 0.8125,
+          "5": 0.8125,
+          "10": 0.875
+        }
+      }
+    },
+    "hybrid_kev_boost": {
+      "all": {
+        "n": 32,
+        "mrr": 0.8385416666666667,
+        "recall_at_k": {
+          "1": 0.6875,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "with_id": {
+        "n": 0,
+        "mrr": null,
+        "recall_at_k": {
+          "1": null,
+          "3": null,
+          "5": null,
+          "10": null
+        }
+      },
+      "without_id": {
+        "n": 32,
+        "mrr": 0.8385416666666667,
+        "recall_at_k": {
+          "1": 0.6875,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    }
+  },
+  "system_order": [
+    "minilm",
+    "bm25",
+    "multi_frozen",
+    "biencoder_ft",
+    "hybrid_rrf",
+    "hybrid_rerank",
+    "hybrid_kev_boost"
+  ],
+  "citations": {
+    "n_answered_factual": 30,
+    "citation_in_context": 1.0,
+    "citation_matches_gold": 1.0,
+    "paraphrase_matches_gold": 0.625
+  },
+  "abstention": {
+    "official_rate": 1.0,
+    "official_n": 20,
+    "nonsense_rate": 1.0,
+    "false_abstain_rate": 0.0625
+  },
+  "scenarios": [
+    {
+      "id": "S1",
+      "name": "KEV y prioridad del día",
+      "route": "retrieval",
+      "score": 5,
+      "note": "Cita el identificador esperado, con veredicto, acción y límite."
+    },
+    {
+      "id": "S2",
+      "name": "Táctica ATT&CK de un CVE",
+      "route": "retrieval",
+      "score": 5,
+      "note": "Cita el identificador esperado, con veredicto, acción y límite."
+    },
+    {
+      "id": "S3",
+      "name": "Detección de una técnica",
+      "route": "retrieval",
+      "score": 5,
+      "note": "Cita el identificador esperado, con veredicto, acción y límite."
+    },
+    {
+      "id": "S4",
+      "name": "Rechazo del dato Kaggle",
+      "route": "datasheet",
+      "score": 5,
+      "note": "Respuesta de gobierno del proyecto, sin inventar un CVE."
+    },
+    {
+      "id": "S5",
+      "name": "CVE inventado",
+      "route": "retrieval",
+      "score": 5,
+      "note": "Abstención explícita, sin asignar CVSS ni KEV al identificador ausente."
+    }
+  ],
+  "checklist_mean_scenarios": 5.0,
+  "checklist_mean_sample": 4.85,
+  "checklist_sample_n": 20,
+  "grid": [
+    {
+      "tag": "lr2e-05_ep1",
+      "lr": 2e-05,
+      "epochs": 1,
+      "train_loss_last": 0.10242382287979127,
+      "dev_mrr": 0.5994664729841234,
+      "dev_r5": 0.7166666666666667,
+      "dev_mrr_without_id": 0.591901320186621,
+      "dev_r5_without_id": 0.7333333333333333,
+      "dev_mrr_with_id": 0.6070316257816256,
+      "n_dev": 60,
+      "n_dev_without_id": 30
+    },
+    {
+      "tag": "lr2e-05_ep2",
+      "lr": 2e-05,
+      "epochs": 2,
+      "train_loss_last": 0.037085998058319095,
+      "dev_mrr": 0.6745835131529975,
+      "dev_r5": 0.8166666666666667,
+      "dev_mrr_without_id": 0.6323965745355432,
+      "dev_r5_without_id": 0.7333333333333333,
+      "dev_mrr_with_id": 0.7167704517704518,
+      "n_dev": 60,
+      "n_dev_without_id": 30
+    },
+    {
+      "tag": "lr1e-04_ep1",
+      "lr": 0.0001,
+      "epochs": 1,
+      "train_loss_last": 0.060285305976867674,
+      "dev_mrr": 0.7731091343267216,
+      "dev_r5": 0.85,
+      "dev_mrr_without_id": 0.6517738242089985,
+      "dev_r5_without_id": 0.7333333333333333,
+      "dev_mrr_with_id": 0.8944444444444444,
+      "n_dev": 60,
+      "n_dev_without_id": 30
+    },
+    {
+      "tag": "lr1e-04_ep2",
+      "lr": 0.0001,
+      "epochs": 2,
+      "train_loss_last": 0.010342490673065186,
+      "dev_mrr": 0.7998198204210331,
+      "dev_r5": 0.85,
+      "dev_mrr_without_id": 0.6882110694134946,
+      "dev_r5_without_id": 0.7333333333333333,
+      "dev_mrr_with_id": 0.9114285714285714,
+      "n_dev": 60,
+      "n_dev_without_id": 30
+    }
+  ]
+}

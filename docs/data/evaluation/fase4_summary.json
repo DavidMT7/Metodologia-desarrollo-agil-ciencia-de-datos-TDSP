@@ -1,0 +1,369 @@
+{
+  "baseline_f3_mrr": 0.6882110694134946,
+  "margin": 0.02,
+  "rows": [
+    {
+      "tag": "cont_lr2e-05_ep1_sc20",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.006442040205001831,
+      "dev_mrr_without_id": 0.6739965703460544,
+      "dev_r5_without_id": 0.7666666666666667,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "cont_lr1e-04_ep1_sc20",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.00978427827358246,
+      "dev_mrr_without_id": 0.6322101233275413,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "cont_lr2e-05_ep1_sc10",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 10.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.06189966797828674,
+      "dev_mrr_without_id": 0.707550607823629,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "cont_lr1e-04_ep1_sc10",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 10.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.06181055903434753,
+      "dev_mrr_without_id": 0.7041991374847346,
+      "dev_r5_without_id": 0.7666666666666667,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_lr1e-04_ep1_sc10",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 10.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.14551725387573242,
+      "dev_mrr_without_id": 0.6555036851102646,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_lr1e-04_ep1_sc20",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.060285305976867674,
+      "dev_mrr_without_id": 0.6517738242089985,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_lr1e-04_ep1_sc40",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 40.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.05945550799369812,
+      "dev_mrr_without_id": 0.6432256955393375,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_lr2e-05_ep1_sc20",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.10242382287979127,
+      "dev_mrr_without_id": 0.591897250182551,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_batch16_ep1",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 16,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.017629000544548034,
+      "dev_mrr_without_id": 0.6697533290983063,
+      "dev_r5_without_id": 0.7666666666666667,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_wd001_ep1",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01,
+      "train_loss_last": 0.060583800077438354,
+      "dev_mrr_without_id": 0.6520192478185614,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "base_warmup0_ep1",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.0,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.047204834222793576,
+      "dev_mrr_without_id": 0.6703295441677122,
+      "dev_r5_without_id": 0.7,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "cont_wd001_ep1",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01,
+      "train_loss_last": 0.006444329023361206,
+      "dev_mrr_without_id": 0.6739965703460544,
+      "dev_r5_without_id": 0.7666666666666667,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "hardneg_from_base",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.18199828863143921,
+      "dev_mrr_without_id": 0.6777825980773523,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "hardneg_from_f3",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase3\\biencoder_best",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.12122780084609985,
+      "dev_mrr_without_id": 0.6800237564367999,
+      "dev_r5_without_id": 0.7666666666666667,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "semihard_from_base",
+      "init": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 0.0001,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.12036759853363037,
+      "dev_mrr_without_id": 0.6627382321000753,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "distiluse_ep1",
+      "init": "sentence-transformers/distiluse-base-multilingual-cased-v2",
+      "lr": 2e-05,
+      "epochs": 1,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.014638018608093262,
+      "dev_mrr_without_id": 0.7223239104864896,
+      "dev_r5_without_id": 0.7333333333333333,
+      "n_pairs": 4000
+    },
+    {
+      "tag": "confirm_distiluse_ep1_ep2",
+      "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase4\\candidates\\distiluse_ep1\\model",
+      "lr": 2e-05,
+      "epochs": 2,
+      "loss_scale": 20.0,
+      "batch_size": 32,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.0,
+      "train_loss_last": 0.012907034158706665,
+      "dev_mrr_without_id": 0.7651816996958277,
+      "dev_r5_without_id": 0.8333333333333334,
+      "n_pairs": 4000
+    }
+  ],
+  "winner": {
+    "tag": "confirm_distiluse_ep1_ep2",
+    "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase4\\candidates\\distiluse_ep1\\model",
+    "lr": 2e-05,
+    "epochs": 2,
+    "loss_scale": 20.0,
+    "batch_size": 32,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.0,
+    "train_loss_last": 0.012907034158706665,
+    "dev_mrr_without_id": 0.7651816996958277,
+    "dev_r5_without_id": 0.8333333333333334,
+    "n_pairs": 4000
+  },
+  "confirm": {
+    "tag": "confirm_distiluse_ep1_ep2",
+    "init": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase4\\candidates\\distiluse_ep1\\model",
+    "lr": 2e-05,
+    "epochs": 2,
+    "loss_scale": 20.0,
+    "batch_size": 32,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.0,
+    "train_loss_last": 0.012907034158706665,
+    "dev_mrr_without_id": 0.7651816996958277,
+    "dev_r5_without_id": 0.8333333333333334,
+    "n_pairs": 4000
+  },
+  "promote": true,
+  "decision_reason": "Promovido confirm_distiluse_ep1_ep2 (MRR 0.765) sobre F3 0.688 (margen 0.02). Gold no eligió.",
+  "deploy_path": "C:\\Users\\J2KUSER\\Documents\\Diplomado Machine learning Unal 2026\\Módulo 6\\Proyecto Fase III\\artifacts\\fase4\\biencoder_best",
+  "gold_deploy_mrr": 1.0,
+  "gold_deploy_r5": 1.0,
+  "gold_f3_mrr": 0.8898809523809523,
+  "gold_f3_r5": 0.96875,
+  "threshold": {
+    "threshold": 0.25,
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 20,
+    "fp": 0,
+    "fn": 0,
+    "tn": 20
+  },
+  "bootstrap_delta_vs_f3": {
+    "delta_mean": 0.1088902529761905,
+    "ci95": [
+      0.03125,
+      0.19495907738095236
+    ],
+    "n": 32,
+    "n_boot": 2000
+  },
+  "n_errors_dev": 5,
+  "errors_sample": [
+    {
+      "id": "D-CVE-01",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16,",
+      "relevant": [
+        "CVE-2016-1082"
+      ],
+      "rank": 17,
+      "top3": [
+        "CVE-2016-1127",
+        "CVE-2016-4097",
+        "CVE-2016-4096"
+      ]
+    },
+    {
+      "id": "D-CVE-03",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.18,",
+      "relevant": [
+        "CVE-2016-4095"
+      ],
+      "rank": 29,
+      "top3": [
+        "CVE-2016-6970",
+        "CVE-2016-7000",
+        "CVE-2016-6996"
+      ]
+    },
+    {
+      "id": "D-CVE-07",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE-119: «Adobe Reader and Acrobat before 11.0.16,",
+      "relevant": [
+        "CVE-2016-1073"
+      ],
+      "rank": 43,
+      "top3": [
+        "CVE-2016-1127",
+        "CVE-2016-4097",
+        "CVE-2016-4096"
+      ]
+    },
+    {
+      "id": "D-CVE-11",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en adobe/acrobat, asociada a CWE no indicado: «Use-after-free vulnerability in ",
+      "relevant": [
+        "CVE-2016-1056"
+      ],
+      "rank": 18,
+      "top3": [
+        "CVE-2016-4107",
+        "CVE-2016-4102",
+        "CVE-2016-1075"
+      ]
+    },
+    {
+      "id": "D-CVE-33",
+      "question": "¿Qué banda de prioridad SOC y estado CISA KEV corresponden a esta vulnerabilidad en rockwellautomation/micrologix_1400_b_firmware, asociada a CWE no indicado: «",
+      "relevant": [
+        "CVE-2017-14469"
+      ],
+      "rank": 12,
+      "top3": [
+        "CVE-2017-14463",
+        "CVE-2017-14466",
+        "CVE-2017-14473"
+      ]
+    }
+  ],
+  "seed": 42,
+  "n_dev": 30,
+  "n_gold": 32
+}

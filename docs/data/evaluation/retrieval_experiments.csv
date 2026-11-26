@@ -1,0 +1,19 @@
+system,split,model,lr,epochs,mrr,recall_at_5,mrr_without_id,recall_at_5_without_id,n,seed,notes
+lr2e-05_ep1,dev,biencoder_ft,2e-05,1,0.5995,0.7167,0.5919,0.7333,60,42,selección por MRR sin identificador
+lr2e-05_ep2,dev,biencoder_ft,2e-05,2,0.6746,0.8167,0.6324,0.7333,60,42,selección por MRR sin identificador
+lr1e-04_ep1,dev,biencoder_ft,0.0001,1,0.7731,0.85,0.6518,0.7333,60,42,selección por MRR sin identificador
+lr1e-04_ep2,dev,biencoder_ft,0.0001,2,0.7998,0.85,0.6882,0.7333,60,42,selección por MRR sin identificador
+minilm,gold_f2,minilm,,,0.2378,0.2812,,,32,42,hold-out; no se reajustó
+minilm,paraphrase,minilm,,,0.912,0.9062,0.912,0.9062,32,42,semi-sintética; no elige el modelo
+bm25,gold_f2,bm25,,,0.3956,0.5,,,32,42,hold-out; no se reajustó
+bm25,paraphrase,bm25,,,0.9437,1.0,0.9437,1.0,32,42,semi-sintética; no elige el modelo
+multi_frozen,gold_f2,multi_frozen,,,0.2412,0.2812,,,32,42,hold-out; no se reajustó
+multi_frozen,paraphrase,multi_frozen,,,0.8295,0.9688,0.8295,0.9688,32,42,semi-sintética; no elige el modelo
+biencoder_ft,gold_f2,biencoder_ft,,,0.8899,0.9688,,,32,42,hold-out; no se reajustó
+biencoder_ft,paraphrase,biencoder_ft,,,0.9531,1.0,0.9531,1.0,32,42,semi-sintética; no elige el modelo
+hybrid_rrf,gold_f2,hybrid_rrf,,,0.9531,1.0,,,32,42,hold-out; no se reajustó
+hybrid_rrf,paraphrase,hybrid_rrf,,,0.9531,1.0,0.9531,1.0,32,42,semi-sintética; no elige el modelo
+hybrid_rerank,gold_f2,hybrid_rerank,,,0.9609,1.0,,,32,42,hold-out; no se reajustó
+hybrid_rerank,paraphrase,hybrid_rerank,,,0.7343,0.8125,0.7343,0.8125,32,42,semi-sintética; no elige el modelo
+hybrid_kev_boost,gold_f2,hybrid_kev_boost,,,0.8274,0.9688,,,32,42,hold-out; no se reajustó
+hybrid_kev_boost,paraphrase,hybrid_kev_boost,,,0.8385,1.0,0.8385,1.0,32,42,semi-sintética; no elige el modelo

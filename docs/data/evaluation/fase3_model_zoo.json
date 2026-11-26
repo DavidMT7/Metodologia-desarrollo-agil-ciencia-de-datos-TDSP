@@ -1,0 +1,128 @@
+{
+  "report_rows": [
+    {
+      "label": "BM25",
+      "system": "bm25_k1=1.5_b=0.9",
+      "family": "lexical",
+      "dev_mrr_stripped": 0.37528935078176295,
+      "dev_r5_stripped": 0.4,
+      "dev_mrr_pasted": 0.7492274180689097,
+      "gold_mrr": 0.3975335981694979,
+      "gold_r5": 0.5
+    },
+    {
+      "label": "TF-IDF palabras",
+      "system": "tfidf_word_df1_sub1",
+      "family": "lexical",
+      "dev_mrr_stripped": 0.3033200279872178,
+      "dev_r5_stripped": 0.36666666666666664,
+      "dev_mrr_pasted": 0.7608771335471478,
+      "gold_mrr": 0.90625,
+      "gold_r5": 0.9375
+    },
+    {
+      "label": "TF-IDF char",
+      "system": "tfidf_char_wb_3_5",
+      "family": "lexical",
+      "dev_mrr_stripped": 0.25151891252807956,
+      "dev_r5_stripped": 0.26666666666666666,
+      "dev_mrr_pasted": 0.694714049362153,
+      "gold_mrr": 0.9583333333333334,
+      "gold_r5": 0.96875
+    },
+    {
+      "label": "Fusión lineal",
+      "system": "linear_w=0.75",
+      "family": "lexical",
+      "dev_mrr_stripped": 0.37706251350146974,
+      "dev_r5_stripped": 0.4,
+      "dev_mrr_pasted": 0.762967652090071,
+      "gold_mrr": 0.6861111111111111,
+      "gold_r5": 0.96875
+    },
+    {
+      "label": "MiniLM congelado",
+      "system": "minilm",
+      "family": "dense_frozen",
+      "dev_mrr_stripped": 0.14409617202396563,
+      "dev_r5_stripped": 0.16666666666666666,
+      "dev_mrr_pasted": 0.6542835649078981,
+      "gold_mrr": 0.23780757023436755,
+      "gold_r5": 0.28125
+    },
+    {
+      "label": "MiniLM multi congelado",
+      "system": "multi_frozen",
+      "family": "dense_frozen",
+      "dev_mrr_stripped": 0.07033598866527527,
+      "dev_r5_stripped": 0.06666666666666667,
+      "dev_mrr_pasted": 0.5567638074748958,
+      "gold_mrr": 0.24123614102249757,
+      "gold_r5": 0.28125
+    },
+    {
+      "label": "Bi-encoder 2 épocas",
+      "system": "biencoder_ft",
+      "family": "dense_ft",
+      "dev_mrr_stripped": 0.1976907982493539,
+      "dev_r5_stripped": 0.3,
+      "dev_mrr_pasted": 0.6882110694134946,
+      "gold_mrr": 0.8898809523809523,
+      "gold_r5": 0.96875
+    },
+    {
+      "label": "RRF publicado",
+      "system": "hybrid_rrf",
+      "family": "hybrid",
+      "dev_mrr_stripped": 0.33908555503920174,
+      "dev_r5_stripped": 0.36666666666666664,
+      "dev_mrr_pasted": 0.7293806712798768,
+      "gold_mrr": 0.953125,
+      "gold_r5": 1.0
+    },
+    {
+      "label": "LSA (SVD 100)",
+      "system": "lsa_100",
+      "family": "unsupervised",
+      "dev_mrr_stripped": 0.11287220118108715,
+      "dev_r5_stripped": 0.16666666666666666,
+      "dev_mrr_pasted": 0.45502444663646646,
+      "gold_mrr": 0.14229791728850344,
+      "gold_r5": 0.21875
+    },
+    {
+      "label": "Doc2Vec",
+      "system": "doc2vec",
+      "family": "embedding_classic",
+      "dev_mrr_stripped": 0.03419625818120676,
+      "dev_r5_stripped": 0.03333333333333333,
+      "dev_mrr_pasted": 0.16100674618869498,
+      "gold_mrr": 0.0009994809597157171,
+      "gold_r5": 0.0
+    },
+    {
+      "label": "DistilUSE congelado",
+      "system": "distiluse_frozen",
+      "family": "dense_frozen",
+      "dev_mrr_stripped": 0.06011221732997223,
+      "dev_r5_stripped": 0.06666666666666667,
+      "dev_mrr_pasted": 0.5172493616871168,
+      "gold_mrr": 0.20895728327695579,
+      "gold_r5": 0.21875
+    },
+    {
+      "label": "DistilUSE 1 época",
+      "system": "distiluse_ep1",
+      "family": "dense_ft",
+      "dev_mrr_stripped": 0.19550508863566157,
+      "dev_r5_stripped": 0.26666666666666666,
+      "dev_mrr_pasted": 0.7223239104864896,
+      "gold_mrr": 1.0,
+      "gold_r5": 1.0
+    }
+  ],
+  "reading": "En desarrollo sin extracto, LSA/Doc2Vec y léxicos miden el cruce español→inglés sin pegar el documento. DistilUSE afinado 1 época mejora el protocolo con extracto pero no desplaza al bi-encoder + RRF de la rúbrica. El gold solo reporta.",
+  "n_dev": 30,
+  "n_gold": 32,
+  "seed": 42
+}

@@ -1,22 +1,46 @@
-# Despliegue de modelos
+# Despliegue del asistente — ejecutado
 
-## Infraestructura
+Estado: **ejecutado** (2026-11-25T04:21:55+00:00).
 
-- **Nombre del modelo:** (nombre que se le ha dado al modelo)
-- **Plataforma de despliegue:** (plataforma donde se va a desplegar el modelo)
-- **Requisitos técnicos:** (lista de requisitos técnicos necesarios para el despliegue, como versión de Python, bibliotecas de terceros, hardware, etc.)
-- **Requisitos de seguridad:** (lista de requisitos de seguridad necesarios para el despliegue, como autenticación, encriptación de datos, etc.)
-- **Diagrama de arquitectura:** (imagen que muestra la arquitectura del sistema que se utilizará para desplegar el modelo)
+## Qué se despliega
 
-## Código de despliegue
+- **Nombre:** asistente CTI de dos épocas, fusión RRF, plantilla en español.
+- **Checkpoint:** `artifacts/fase3/biencoder_best` (`lr1e-04_ep2`).
+- **Forma:** bi-encoder siamés (MiniLM) + BM25 (`k1=1,5`, `b=0,75`) + RRF k=60.
+- **API:** `from threatintel.rag.responder import responder` → `responder(pregunta)`.
+- **Plataforma:** proceso local. Sin API pública.
+- **Índice:** parquets hardened únicamente (compuerta de linaje al arrancar).
+- **Fuera:** `biencoder_ep3`, re-ranker, bonus KEV de ranking, fusión lineal.
 
-- **Archivo principal:** (nombre del archivo principal que contiene el código de despliegue)
-- **Rutas de acceso a los archivos:** (lista de rutas de acceso a los archivos necesarios para el despliegue)
-- **Variables de entorno:** (lista de variables de entorno necesarias para el despliegue)
+```mermaid
+flowchart TD
+  load[load_responder] --> linaje[assert_phase3_lineage]
+  linaje --> encode[Encode_GPU_indice]
+  encode --> api[responder_pregunta]
+  api --> rrf[Dense_plus_BM25_RRF]
+  rrf --> gate{umbral_0.40}
+  gate -->|ok| texto[Plantilla_SOC]
+  gate -->|no| abs[Abstencion]
+```
 
-## Documentación del despliegue
+## Requisitos
 
-- **Instrucciones de instalación:** (instrucciones detalladas para instalar el modelo en la plataforma de despliegue)
-- **Instrucciones de configuración:** (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
-- **Instrucciones de uso:** (instrucciones detalladas para utilizar el modelo en la plataforma de despliegue)
-- **Instrucciones de mantenimiento:** (instrucciones detalladas para mantener el modelo en la plataforma de despliegue)
+- Python 3.13 + `requirements.txt`.
+- GPU opcional para encode; la demo no reentrena.
+
+## Ejecución
+
+```bash
+set PYTHONPATH=src
+python -u -m threatintel.rag.run_fase4
+```
+
+Salida S1–S5: `docs/acceptance/fase4_demo_s1_s5.md`. Media checklist: **5.00/5**.
+
+## Uso previsto
+
+Pregunta en español por CVE/técnica del índice. Abstención si falta id o coseno < 0,40. Pedido ofensivo sin procedimiento.
+
+## Mantenimiento
+
+No se reabre la grilla ni se sustituye el checkpoint con candidatos. Un cambio de modelo exige otro conjunto de evaluación.

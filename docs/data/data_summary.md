@@ -383,17 +383,3 @@ Figuras regeneradas para honestidad metodológica:
 **Corpus LLM — detection:** `task_type=detection` ≈ **144** (~1 %) → no entrena “cómo detectar”; usar MITRE hardened + RAG (`Fase_III/`).
 
 **NLP clásico (TF-IDF/W2V/Doc2Vec):** baseline **didáctico**. Retrieval de producto: MiniLM/hybrid (MRR~0.19, R@5~0.25) a mejorar en Fase 3.
-
----
-
-## Baselines Módulo 4 (complemento Fase 2c)
-
-Alineados a MLDS4 U4 (supervisado) y U5 (tópicos). Script: `run_m4_classic_baselines.py` · notebook: `Proyecto_Fase2c_M4_Clasico.ipynb` · KB: `docs/knowledge/`.
-
-| Experimento | Dato | Lectura honesta |
-|-------------|------|-----------------|
-| TF-IDF→LR `task_type` (instructions) | acc **0,938** · macro-F1 **0,925** | Etiqueta **heurística** (keywords); no gold humano — baseline de curso |
-| LR tabular Kaggle `severity_level` | acc **0,253** · macro-F1 **0,169** | Casi azar → confirma datasheet (señal sintética débil) |
-| LDA/NMF CVE+MITRE | n_docs≈**3696**, k=**6** | Temas léxicos (code/remote/exploit…); no = ATT&CK |
-
-Figuras: `m4_lr_task_type_cm.png`, `m4_lr_kaggle_severity_cm.png`, `m4_topics_cve_lda.png`.

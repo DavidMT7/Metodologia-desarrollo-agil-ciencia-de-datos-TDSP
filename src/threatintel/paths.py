@@ -5,18 +5,15 @@ from pathlib import Path
 
 
 def find_project_root(start: Path | None = None) -> Path:
-    """Ancestro más externo que contiene docs/data/."""
+    """Ancestro más cercano con configs/retrieval.yaml y docs/data/."""
     cur = (start or Path.cwd()).resolve()
-    candidates: list[Path] = []
     for _ in range(12):
-        if (cur / "docs" / "data").is_dir():
-            candidates.append(cur)
+        if (cur / "configs" / "retrieval.yaml").is_file() and (cur / "docs" / "data").is_dir():
+            return cur
         if cur.parent == cur:
             break
         cur = cur.parent
-    if not candidates:
-        raise FileNotFoundError("No se encontró docs/data/ en ancestros")
-    return candidates[-1]
+    raise FileNotFoundError("No se encontró configs/retrieval.yaml + docs/data/ en ancestros")
 
 
 def project_paths(root: Path | None = None) -> dict[str, Path]:

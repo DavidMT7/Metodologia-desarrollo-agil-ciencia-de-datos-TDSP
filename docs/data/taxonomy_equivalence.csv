@@ -1,0 +1,11 @@
+cve_label,mitre_like,notes
+Execution,Execution,Directo
+Initial Access,Initial Access,Directo
+Credential Access,Credential Access,Directo
+Collection,Collection,Directo
+Defense Evasion,Defense Impairment,CVE usa Defense Evasion; corpus MITRE HF usa Defense Impairment
+Privilege Escalation,Privilege Escalation,Directo
+Unknown,,Requiere inferencia CWE/keywords
+,Stealth,Dominante en catálogo MITRE HF; poco presente como etiqueta CVE
+,Persistence,Presente en MITRE HF; raro/ausente en likely_mitre_tactic CVE
+,Reconnaissance,MITRE HF; no aparece en top CVE

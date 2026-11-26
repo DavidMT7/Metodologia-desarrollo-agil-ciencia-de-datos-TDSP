@@ -1,0 +1,13 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_corpus": 5697,
+  "n_queries_eval": 32,
+  "mrr": 0.18786499802883416,
+  "recall_at_k": {
+    "1": 0.15625,
+    "3": 0.1875,
+    "5": 0.25,
+    "10": 0.28125
+  },
+  "seed": 42
+}

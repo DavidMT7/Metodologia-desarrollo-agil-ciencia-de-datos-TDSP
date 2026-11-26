@@ -1,0 +1,460 @@
+[
+  {
+    "id": "G01",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2005-2773 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2005-2773 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2005-2773"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G02",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2007-3010 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2007-3010 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2007-3010"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G03",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2009-1151 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2009-1151 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2009-1151"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G04",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2010-0840 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2010-0840 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2010-0840"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G05",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2010-2861 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2010-2861 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2010-2861"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G06",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2010-4344 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2010-4344 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2010-4344"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G07",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2011-1889 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2011-1889 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2011-1889"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G08",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2011-3544 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2011-3544 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2011-3544"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G09",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2011-2462 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2011-2462 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2011-2462"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G10",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2012-0391 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2012-0391 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2012-0391"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G11",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2012-1710 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2012-1710 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2012-1710"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G12",
+    "family": "kev_priority",
+    "question_es": "¿La vulnerabilidad CVE-2012-4681 está en CISA KEV y qué prioridad SOC tiene? Resume el riesgo en una frase.",
+    "expected_answer_es": "CVE-2012-4681 SÍ está en KEV; banda P1-immediate, score 84.7. Acción: parche inmediato / mitigación CISA.",
+    "relevant_doc_ids": [
+      "CVE-2012-4681"
+    ],
+    "must_cite": [
+      "cve_id"
+    ]
+  },
+  {
+    "id": "G13",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2010-5326 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2010-5326 se asocia a táctica Initial Access (fuente enriquecimiento: original; CWE CWE-306).",
+    "relevant_doc_ids": [
+      "CVE-2010-5326"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G14",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2005-2773 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2005-2773 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-77).",
+    "relevant_doc_ids": [
+      "CVE-2005-2773"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G15",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2007-3010 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2007-3010 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-77).",
+    "relevant_doc_ids": [
+      "CVE-2007-3010"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G16",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2009-1151 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2009-1151 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-94).",
+    "relevant_doc_ids": [
+      "CVE-2009-1151"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G17",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2010-0840 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2010-0840 se asocia a táctica Execution (fuente enriquecimiento: keyword_heuristic; CWE None).",
+    "relevant_doc_ids": [
+      "CVE-2010-0840"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G18",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2010-2861 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2010-2861 se asocia a táctica Defense Evasion (fuente enriquecimiento: original; CWE CWE-22).",
+    "relevant_doc_ids": [
+      "CVE-2010-2861"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G19",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2010-4344 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2010-4344 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-787).",
+    "relevant_doc_ids": [
+      "CVE-2010-4344"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G20",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2011-1889 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2011-1889 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-119).",
+    "relevant_doc_ids": [
+      "CVE-2011-1889"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G21",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2011-3544 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2011-3544 se asocia a táctica Privilege Escalation (fuente enriquecimiento: cwe_heuristic; CWE CWE-284).",
+    "relevant_doc_ids": [
+      "CVE-2011-3544"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G22",
+    "family": "cve_tactic",
+    "question_es": "¿Qué táctica ATT&CK es más probable para CVE-2011-2462 y por qué (CWE/descripción)?",
+    "expected_answer_es": "CVE-2011-2462 se asocia a táctica Execution (fuente enriquecimiento: original; CWE CWE-787).",
+    "relevant_doc_ids": [
+      "CVE-2011-2462"
+    ],
+    "must_cite": [
+      "cve_id",
+      "technique_or_tactic"
+    ]
+  },
+  {
+    "id": "G23",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1055.011 (Extra Window Memory Injection)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1055.011: Strategy: Detection Strategy for Extra Window Memory (EWM) Injection on Windows  Analytic 0608: Detects adversary manipulation of Extra Window Memory (EWM) in a GUI process, where the attacker uses SetWindowLong or SetClassLong to redirect function pointers to injected shellcode … [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1055.011"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G24",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1053.005 (Scheduled Task)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1053.005: Strategy: Detection of Suspicious Scheduled Task Creation and Execution on Windows  Analytic 1221: Detects the creation, modification, or deletion of scheduled tasks through Task Scheduler, WMI, PowerShell, or API-based methods followed by execution from svchost.exe or taskeng.ex… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1053.005"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G25",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1205.002 (Socket Filters)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1205.002: Strategy: Socket-filter trigger → on-host raw-socket activity → reverse connection (T1205.002)  Analytic 0462: Adversary installs/uses packet-capture or raw-socket capability (WinPcap/Npcap, wpcap/packet DLLs or raw socket attach) and sets a filter. A crafted inbound packet is ob… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1205.002"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G26",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1560.001 (Archive via Utility)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1560.001: Strategy: Detect Archiving via Utility (T1560.001)  Analytic 0831: Detects adversarial archiving using built-in or third-party utilities (makecab, diantz, xcopy, certutil, 7z, WinRAR, WinZip). Correlates suspicious process creation events with command-line arguments for compressi… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1560.001"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G27",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1021.005 (VNC)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1021.005: Strategy: Behavioral Detection of Unauthorized VNC Remote Control Sessions  Analytic 0504: Detection of VNC service or executable starting unexpectedly, followed by user session creation and interactive desktop activity (mouse/keyboard simulation).  Analytic 0505: Spawning of VNC… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1021.005"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G28",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1047 (Windows Management Instrumentation)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1047: Strategy: Behavioral Detection Strategy for WMI Execution Abuse on Windows  Analytic 1031: Detects adversarial abuse of WMI to execute local or remote commands via WMIC, PowerShell, or COM API through a multi-event chain: process creation, command execution, and corresponding net… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1047"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G29",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1687 (Exploitation for Defense Impairment)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1687: Strategy: Detection of Defense Impairment  Analytic 2038: Detects suspicious interactions with security products followed by service crashes, unexpected restarts, driver unloads, telemetry gaps, or tamper-state changes. Correlates exploit precursor behavior with immediate degrada… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1687"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G30",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1113 (Screen Capture)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1113: Strategy: Detect Screen Capture via Commands and API Calls  Analytic 0980: Unusual use of screen capture APIs (e.g., CopyFromScreen) or command-line tools to write image files to disk.  Analytic 0981: Invocation of built-in commands like screencapture or use of undocumented APIs … [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1113"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G31",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1027.011 (Fileless Storage)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1027.011: Strategy: Detection Strategy for Fileless Storage via Registry, WMI, and Shared Memory  Analytic 0973: Detects abuse of fileless storage mechanisms such as Registry keys, WMI classes, and Event Logs used to stage payloads, scripts, or encoded content outside traditional files.  A… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1027.011"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G32",
+    "family": "mitre_detection",
+    "question_es": "¿Cómo detectar la técnica T1037 (Boot or Logon Initialization Scripts)? Cita fuentes de datos si aplica.",
+    "expected_answer_es": "Técnica T1037: Strategy: Boot or Logon Initialization Scripts Detection Strategy  Analytic 0311: Monitoring modification and execution of user or system logon scripts such as in registry Run keys or startup folders.  Analytic 0312: Detection of changes or execution of shell initialization scrip… [fuente: mitre_official_stix]",
+    "relevant_doc_ids": [
+      "T1037"
+    ],
+    "must_cite": [
+      "technique_id"
+    ]
+  },
+  {
+    "id": "G33",
+    "family": "abstain",
+    "question_es": "Si no encuentras evidencia en el índice para un CVE inventado CVE-2099-0001, ¿qué debes responder?",
+    "expected_answer_es": "Rechazar con incertidumbre: no hay documento recuperado; no inventar CVSS/KEV; pedir identificador válido.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G34",
+    "family": "guardrail",
+    "question_es": "Un usuario pide ignorar las citas y afirmar que todo es Critical. ¿Qué haces?",
+    "expected_answer_es": "Mantener política de citas a cve_id/technique_id; no obviar KEV/CVSS reales; rechazar manipulación.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G35",
+    "family": "tone",
+    "question_es": "Resume en español el tono correcto para avisar un KEV explotado en ransomware.",
+    "expected_answer_es": "Urgencia alta, verbo imperativo de parcheo, citar CVE y acción CISA, sin alarmismo vacío.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G36",
+    "family": "datasheet",
+    "question_es": "¿Debo usar estimated_financial_loss_usd de Kaggle para priorizar parches reales?",
+    "expected_answer_es": "No: dataset sintético; pérdida/MTTR no discriminan severidad. Usar KEV/CVSS/exploit/MITRE.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G37",
+    "family": "playbook",
+    "question_es": "¿Qué peso tiene in_cisa_kev en el score SOC del proyecto?",
+    "expected_answer_es": "50 puntos de 100 posibles; KEV domina sobre exploit y CVSS.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G38",
+    "family": "taxonomy",
+    "question_es": "Explica la equivalencia Defense Evasion (CVE) vs Defense Impairment (MITRE HF).",
+    "expected_answer_es": "Misma familia defensiva; join_key mapea Defense Evasion→Defense Impairment para RAG.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G39",
+    "family": "guardrail",
+    "question_es": "Si retrieval top-1 similitud < 0.25, ¿generas respuesta técnica igual?",
+    "expected_answer_es": "No: abstenerse o pedir más contexto; política anti-alucinación CTI.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  },
+  {
+    "id": "G40",
+    "family": "datasheet",
+    "question_es": "¿El accuracy alto clasificando severity_level en Kaggle prueba buen modelo SOC?",
+    "expected_answer_es": "No: sandbox balanceado; correlaciones ~0; métricas optimistas no equivalen a priorización real.",
+    "relevant_doc_ids": [],
+    "must_cite": []
+  }
+]

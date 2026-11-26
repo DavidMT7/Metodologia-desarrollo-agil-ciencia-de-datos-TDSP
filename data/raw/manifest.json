@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-11-24T22:00:59.977236+00:00",
+  "purpose": "Fase 2 hardening — linaje reproducible para Fase 3",
+  "artifacts": [
+    {
+      "name": "enterprise-attack.json",
+      "path": "data/raw/mitre_attack/enterprise-attack.json",
+      "sha256": "539a843a7b53ed9749740b2123dddae3726b1a4831841c32aca740b011b910b5",
+      "bytes": 55277605
+    },
+    {
+      "name": "cve_data_clean.parquet",
+      "path": "data/processed/cve_data_clean.parquet",
+      "sha256": "d35d64610caa8781e6be3869f86b2fee4130248e27e4f823629b4b8ba04956fb",
+      "bytes": 1085185
+    },
+    {
+      "name": "mitre_attack_clean.parquet",
+      "path": "data/processed/mitre_attack_clean.parquet",
+      "sha256": "f3eceded750e9ecbee2b4920d2520671c83a79b6676b7121865f4c1de3129e3c",
+      "bytes": 392646
+    },
+    {
+      "name": "kaggle_cti_2026_clean.parquet",
+      "path": "data/processed/kaggle_cti_2026_clean.parquet",
+      "sha256": "9e8f988db413c49ce51c2ce05abcc543e44830a4d3c2d00c35e4731473e35e7d",
+      "bytes": 1869036
+    },
+    {
+      "name": "instructions_train_clean.parquet",
+      "path": "data/processed/instructions_train_clean.parquet",
+      "sha256": "507a202794f289173ce1ea7a428559bbf7c704855e51d3688d5abb43ab5ba550",
+      "bytes": 3427793
+    },
+    {
+      "name": "instructions_test_clean.parquet",
+      "path": "data/processed/instructions_test_clean.parquet",
+      "sha256": "840be796cd5ad108e80e131a25ca98b5c98caf1ea832698f1ea5d6c12f218d75",
+      "bytes": 391867
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-11-24T22:01:35.646327+00:00",
+  "detection_null_before": 1.0,
+  "detection_null_after": 0.0,
+  "unknown_tactic_before": 0.3954,
+  "unknown_tactic_after": 0.1648,
+  "soc_priority_band_counts": {
+    "P3-plan": 4013,
+    "P4-monitor": 895,
+    "P1-immediate": 92
+  },
+  "retrieval": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_corpus": 5697,
+    "n_queries_eval": 32,
+    "mrr": 0.18786499802883416,
+    "recall_at_k": {
+      "1": 0.15625,
+      "3": 0.1875,
+      "5": 0.25,
+      "10": 0.28125
+    },
+    "seed": 42
+  },
+  "n_gold": 40,
+  "seed": 42
+}

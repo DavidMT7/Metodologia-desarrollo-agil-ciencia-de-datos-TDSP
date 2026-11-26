@@ -1,10 +1,28 @@
-# Team Data Science Project Template
+# Entrega — Fase II (EDA, preprocesamiento y hardening CTI)
 
-Esta plantilla es una implementación de la plantilla de proyecto de Team Data Science Process que actualmente se utiliza en el "Programa de Formación en Machine Learning y Data Science" en la Universidad Nacional de Colombia.
+**Metodología:** TDSP · `docs/` · `scripts/` · `src/` · `data/`
 
-Esta plantilla proporciona las siguientes carpetas y archivos:
+## Notebook de la fase
 
-* `src`: acá debe ir el código o implementación del proyecto en Python.
-* `docs`: en esta carpeta se encuentran las plantillas de los documentos definidos en la metodología.
-* `scripts`: esta carpeta debe contener los scripts/notebooks que se ejecutarán.
-* `pyproject.toml`: archivo de definición del proyecto en Python.
+`scripts/preprocessing_eda/Proyecto_Fase2_ThreatIntel_EDA.ipynb`
+
+## Estructura
+
+```text
+data/processed/          parquets clean / hardened
+docs/data/               data_summary, figures, playbooks
+scripts/preprocessing_eda/
+src/threatintel/         utilidades de linaje y enriquecimiento
+tests/                   contratos de esquema
+```
+
+## Objetivo
+
+Comprender el corpus, aplicar ETL/hardening CTI y dejar datos listos para modelado (Fase III), con figuras y resumen reproducibles.
+
+## Cómo ejecutar
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m pytest tests -q
+```

@@ -1,0 +1,20 @@
+{
+  "mitre": {
+    "ok": true,
+    "mean_off_diag": 0.6230793595314026,
+    "std_off_diag": 0.1955386996269226,
+    "collapsed": false,
+    "n_docs": 120,
+    "epochs": 40,
+    "path": "mitre_doc2vec_sim.png"
+  },
+  "instructions": {
+    "ok": true,
+    "mean_off_diag": 0.7247873544692993,
+    "std_off_diag": 0.17988020181655884,
+    "collapsed": false,
+    "n_docs": 150,
+    "epochs": 30,
+    "path": "inst_doc2vec_sim.png"
+  }
+}

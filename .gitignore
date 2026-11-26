@@ -1,5 +1,76 @@
-**/*__pycache__/*
-*.env
-env_vars*
-credentials*
-**/build/*
+# --- sistemas / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- secretos ---
+.env
+.env.*
+!.env.example
+*.pem
+credentials*.json
+secrets.*
+
+# --- pesos y checkpoints (GitHub) ---
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+*.joblib
+**/artifacts/**/candidates/
+**/artifacts/**/biencoder_ep3/
+**/artifacts/**/model.safetensors
+**/artifacts/**/pytorch_model.bin
+
+# --- caches ML / HF ---
+.cache/
+**/huggingface/
+**/.huggingface/
+**/transformers_cache/
+**/torch_extensions/
+**/wandb/
+**/mlruns/
+**/runs/
+**/lightning_logs/
+
+# --- datos pesados opcionales (descomenta si el push falla) ---
+# **/data/raw/**
+# **/*.parquet
+
+# --- basura local ---
+backup/
+**/backup/
+Recursos/
+**/Recursos/
+tmp/
+temp/
+*.log
+*.tmp
+
+# --- scripts de preparación locales ---
+_preparar_github.py
